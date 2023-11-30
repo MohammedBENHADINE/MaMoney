@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaMoney Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .category-box {
+            max-height: 150px;
+            overflow-y: auto;
+        }
+        .subcategory:hover {
+            cursor: pointer;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <div class="container mx-auto mt-10">
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-2xl font-semibold">Hey Username, welcome to MaMoney</h1>
+            <div>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">Change Settings</button>
+                <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Add new Category</button>
+                <button class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">Add Entry</button>
+            </div>
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="category-box bg-white p-4 rounded shadow">
+                    <h2 class="font-bold mb-2">Cat 1</h2>
+                    <div class="subcategory p-2" onclick="alert('Showing last entries for Sub cat 1')">
+                        Sub cat 1 - $10
+                    </div>
+                    <div class="subcategory p-2" onclick="alert('Showing last entries for Sub cat 2')">
+                        Sub cat 2
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <div class="text-4xl font-bold">$183</div>
+                </div>
+                <div class="category-box bg-white p-4 rounded shadow">
+                    <h2 class="font-bold mb-2">Cat 2</h2>
+                    <!-- Subcategories would be listed here -->
+                </div>
+                <div class="category-box bg-white p-4 rounded shadow">
+                    <h2 class="font-bold mb-2">Cat 3</h2>
+                    <!-- Subcategories would be listed here -->
+                </div>
+                <div class="category-box bg-white p-4 rounded shadow">
+                    <h2 class="font-bold mb-2">Cat 2</h2>
+                    <!-- Subcategories would be listed here -->
+                </div>
+                <div class="category-box bg-white p-4 rounded shadow">
+                    <h2 class="font-bold mb-2">Cat 2</h2>
+                    <!-- Subcategories would be listed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
